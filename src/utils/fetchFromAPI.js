@@ -1,8 +1,7 @@
 const axios = require("axios");
-
-const BASE_URL = "https://youtube-v31.p.rapidapi.com/";
+//url: BASE_URL,
+const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 const options = {
-  url: BASE_URL,
   params: {
     maxResults: "50",
   },
@@ -18,11 +17,11 @@ export const fetchFromAPI = async (url) => {
   return data;
 };
 
-axios
-  .request(options)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+// axios
+//   .request(options)
+//   .then(function (response) {
+//     console.log(response.data);
+//   })
+//   .catch(function (error) {
+//     console.error(error);
+//   });
